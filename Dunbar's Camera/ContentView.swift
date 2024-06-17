@@ -1,61 +1,92 @@
-//
-//  ContentView.swift
-//  Dunbar's Camera
-//
-//  Created by Matthew Stovall on 6/8/24.
-//
-
 import SwiftUI
-import SwiftData
+import PhotosUI
 
 struct ContentView: View {
-    @Environment(\.modelContext) private var modelContext
-    @Query private var items: [Item]
+    @State private var showTagSelector: Bool = false
+    @State private var capturedImage: UIImage?
+    @State private var selectedTag: String?
+    @State private var tags: [String] = ["Work", "Personal", "Travel"] // Example tags
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        ZStack {
+            CameraView(capturedImage: $capturedImage, showTagSelector: $showTagSelector)
+                .edgesIgnoringSafeArea(.all)
+            
+            if let capturedImage = capturedImage {
+                VStack {
+                    Spacer()
+                    Image(uiImage: capturedImage)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color.black.opacity(0.5))
+                    Spacer()
+                    Button("Select Tag") {
+                        showTagSelector = true
                     }
-                }
-                .onDelete(perform: deleteItems)
-            }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
+                    .padding()
                 }
             }
-        } detail: {
-            Text("Select an item")
+
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        capturePhoto()
+                    }) {
+                        Circle()
+                            .frame(width: 70, height: 70)
+                            .foregroundColor(.white)
+                            .overlay(
+                                Circle()
+                                    .stroke(Color.black, lineWidth: 2)
+                            )
+                    }
+                    Spacer()
+                }
+                .padding(.bottom, 20)
+            }
+        }
+        .sheet(isPresented: $showTagSelector) {
+            TagSelectorView(selectedTag: $selectedTag, tags: tags)
+                .onDisappear {
+                    if let tag = selectedTag, let image = capturedImage {
+                        saveImageWithTag(image, tag)
+                    }
+                }
         }
     }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
+    
+    private func capturePhoto() {
+        NotificationCenter.default.post(name: .capturePhoto, object: nil)
     }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
+    
+    private func saveImageWithTag(_ image: UIImage, _ tag: String) {
+        // Save the image to the photo library
+        PHPhotoLibrary.shared().performChanges({
+            let request = PHAssetChangeRequest.creationRequestForAsset(from: image)
+            let placeholder = request.placeholderForCreatedAsset
+            let assetID = placeholder?.localIdentifier ?? ""
+            
+            // Save the tag information to UserDefaults
+            var savedTags = UserDefaults.standard.dictionary(forKey: "savedTags") as? [String: String] ?? [String: String]()
+            savedTags[assetID] = tag
+            UserDefaults.standard.setValue(savedTags, forKey: "savedTags")
+            
+        }) { success, error in
+            if success {
+                print("Image and tag saved successfully.")
+                DispatchQueue.main.async {
+                    self.capturedImage = nil
+                }
+            } else if let error = error {
+                print("Error saving image: \(error.localizedDescription)")
             }
         }
     }
 }
 
-#Preview {
-    ContentView()
-        .modelContainer(for: Item.self, inMemory: true)
+extension Notification.Name {
+    static let capturePhoto = Notification.Name("capturePhoto")
 }
