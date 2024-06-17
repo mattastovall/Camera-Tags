@@ -1,8 +1,7 @@
-//
-//  PhotoTag.swift
-//  Dunbar's Camera
-//
-//  Created by Matthew Stovall on 6/10/24.
-//
+import SwiftUI
 
-import Foundation
+struct PhotoTag: Identifiable, Hashable {
+    let id = UUID()
+    var name: String
+    var color: Color
+}

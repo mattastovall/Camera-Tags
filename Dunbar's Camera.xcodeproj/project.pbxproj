@@ -15,6 +15,15 @@
 		840E72722C155D1700A2B04C /* Dunbar_s_CameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E72712C155D1700A2B04C /* Dunbar_s_CameraTests.swift */; };
 		840E727C2C155D1700A2B04C /* Dunbar_s_CameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E727B2C155D1700A2B04C /* Dunbar_s_CameraUITests.swift */; };
 		840E727E2C155D1700A2B04C /* Dunbar_s_CameraUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E727D2C155D1700A2B04C /* Dunbar_s_CameraUITestsLaunchTests.swift */; };
+		840E728B2C155DB700A2B04C /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E728A2C155DB700A2B04C /* CameraView.swift */; };
+		840E72932C16BDAF00A2B04C /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E72922C16BDAF00A2B04C /* CameraViewController.swift */; };
+		840E72952C17DD0B00A2B04C /* TagSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E72942C17DD0B00A2B04C /* TagSelectorView.swift */; };
+		840E72982C17E08B00A2B04C /* TagEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E72972C17E08B00A2B04C /* TagEditor.swift */; };
+		840E729C2C17F18A00A2B04C /* ImageGalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E729B2C17F18A00A2B04C /* ImageGalleryView.swift */; };
+		840E729E2C17FDE300A2B04C /* PhotoTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E729D2C17FDE300A2B04C /* PhotoTag.swift */; };
+		840E72A02C1800D900A2B04C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E729F2C1800D900A2B04C /* ColorExtension.swift */; };
+		840E72A32C180D8B00A2B04C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E729F2C1800D900A2B04C /* ColorExtension.swift */; };
+		840E72A42C180D8B00A2B04C /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840E729F2C1800D900A2B04C /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,17 +44,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		840E725B2C155D1600A2B04C /* Dunbar's Camera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dunbar's Camera.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E725B2C155D1600A2B04C /* Camera Tags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Camera Tags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840E725E2C155D1600A2B04C /* Dunbar_s_CameraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dunbar_s_CameraApp.swift; sourceTree = "<group>"; };
 		840E72602C155D1600A2B04C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		840E72622C155D1600A2B04C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		840E72642C155D1700A2B04C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840E72672C155D1700A2B04C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		840E726D2C155D1700A2B04C /* Dunbar's CameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dunbar's CameraTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E726D2C155D1700A2B04C /* Photo Tags Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo Tags Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840E72712C155D1700A2B04C /* Dunbar_s_CameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dunbar_s_CameraTests.swift; sourceTree = "<group>"; };
-		840E72772C155D1700A2B04C /* Dunbar's CameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dunbar's CameraUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		840E72772C155D1700A2B04C /* Photo Tags UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo Tags UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840E727B2C155D1700A2B04C /* Dunbar_s_CameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dunbar_s_CameraUITests.swift; sourceTree = "<group>"; };
 		840E727D2C155D1700A2B04C /* Dunbar_s_CameraUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dunbar_s_CameraUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		840E728A2C155DB700A2B04C /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		840E72922C16BDAF00A2B04C /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		840E72942C17DD0B00A2B04C /* TagSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagSelectorView.swift; sourceTree = "<group>"; };
+		840E72972C17E08B00A2B04C /* TagEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEditor.swift; sourceTree = "<group>"; };
+		840E729B2C17F18A00A2B04C /* ImageGalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView.swift; sourceTree = "<group>"; };
+		840E729D2C17FDE300A2B04C /* PhotoTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTag.swift; sourceTree = "<group>"; };
+		840E729F2C1800D900A2B04C /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +102,9 @@
 		840E725C2C155D1600A2B04C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				840E725B2C155D1600A2B04C /* Dunbar's Camera.app */,
-				840E726D2C155D1700A2B04C /* Dunbar's CameraTests.xctest */,
-				840E72772C155D1700A2B04C /* Dunbar's CameraUITests.xctest */,
+				840E725B2C155D1600A2B04C /* Camera Tags.app */,
+				840E726D2C155D1700A2B04C /* Photo Tags Tests.xctest */,
+				840E72772C155D1700A2B04C /* Photo Tags UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,8 +112,15 @@
 		840E725D2C155D1600A2B04C /* Dunbar's Camera */ = {
 			isa = PBXGroup;
 			children = (
-				840E725E2C155D1600A2B04C /* Dunbar_s_CameraApp.swift */,
+				840E729F2C1800D900A2B04C /* ColorExtension.swift */,
+				840E729B2C17F18A00A2B04C /* ImageGalleryView.swift */,
+				840E729D2C17FDE300A2B04C /* PhotoTag.swift */,
 				840E72602C155D1600A2B04C /* ContentView.swift */,
+				840E728A2C155DB700A2B04C /* CameraView.swift */,
+				840E72942C17DD0B00A2B04C /* TagSelectorView.swift */,
+				840E72972C17E08B00A2B04C /* TagEditor.swift */,
+				840E72922C16BDAF00A2B04C /* CameraViewController.swift */,
+				840E725E2C155D1600A2B04C /* Dunbar_s_CameraApp.swift */,
 				840E72622C155D1600A2B04C /* Item.swift */,
 				840E72642C155D1700A2B04C /* Assets.xcassets */,
 				840E72662C155D1700A2B04C /* Preview Content */,
@@ -133,9 +156,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		840E725A2C155D1600A2B04C /* Dunbar's Camera */ = {
+		840E725A2C155D1600A2B04C /* Camera Tags */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840E72812C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Dunbar's Camera" */;
+			buildConfigurationList = 840E72812C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Camera Tags" */;
 			buildPhases = (
 				840E72572C155D1600A2B04C /* Sources */,
 				840E72582C155D1600A2B04C /* Frameworks */,
@@ -145,14 +168,14 @@
 			);
 			dependencies = (
 			);
-			name = "Dunbar's Camera";
+			name = "Camera Tags";
 			productName = "Dunbar's Camera";
-			productReference = 840E725B2C155D1600A2B04C /* Dunbar's Camera.app */;
+			productReference = 840E725B2C155D1600A2B04C /* Camera Tags.app */;
 			productType = "com.apple.product-type.application";
 		};
-		840E726C2C155D1700A2B04C /* Dunbar's CameraTests */ = {
+		840E726C2C155D1700A2B04C /* Photo Tags Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840E72842C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Dunbar's CameraTests" */;
+			buildConfigurationList = 840E72842C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Photo Tags Tests" */;
 			buildPhases = (
 				840E72692C155D1700A2B04C /* Sources */,
 				840E726A2C155D1700A2B04C /* Frameworks */,
@@ -163,14 +186,14 @@
 			dependencies = (
 				840E726F2C155D1700A2B04C /* PBXTargetDependency */,
 			);
-			name = "Dunbar's CameraTests";
+			name = "Photo Tags Tests";
 			productName = "Dunbar's CameraTests";
-			productReference = 840E726D2C155D1700A2B04C /* Dunbar's CameraTests.xctest */;
+			productReference = 840E726D2C155D1700A2B04C /* Photo Tags Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		840E72762C155D1700A2B04C /* Dunbar's CameraUITests */ = {
+		840E72762C155D1700A2B04C /* Photo Tags UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 840E72872C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Dunbar's CameraUITests" */;
+			buildConfigurationList = 840E72872C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Photo Tags UITests" */;
 			buildPhases = (
 				840E72732C155D1700A2B04C /* Sources */,
 				840E72742C155D1700A2B04C /* Frameworks */,
@@ -181,9 +204,9 @@
 			dependencies = (
 				840E72792C155D1700A2B04C /* PBXTargetDependency */,
 			);
-			name = "Dunbar's CameraUITests";
+			name = "Photo Tags UITests";
 			productName = "Dunbar's CameraUITests";
-			productReference = 840E72772C155D1700A2B04C /* Dunbar's CameraUITests.xctest */;
+			productReference = 840E72772C155D1700A2B04C /* Photo Tags UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,9 +245,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				840E725A2C155D1600A2B04C /* Dunbar's Camera */,
-				840E726C2C155D1700A2B04C /* Dunbar's CameraTests */,
-				840E72762C155D1700A2B04C /* Dunbar's CameraUITests */,
+				840E725A2C155D1600A2B04C /* Camera Tags */,
+				840E726C2C155D1700A2B04C /* Photo Tags Tests */,
+				840E72762C155D1700A2B04C /* Photo Tags UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -261,8 +284,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				840E72612C155D1600A2B04C /* ContentView.swift in Sources */,
+				840E729E2C17FDE300A2B04C /* PhotoTag.swift in Sources */,
+				840E72952C17DD0B00A2B04C /* TagSelectorView.swift in Sources */,
 				840E72632C155D1600A2B04C /* Item.swift in Sources */,
 				840E725F2C155D1600A2B04C /* Dunbar_s_CameraApp.swift in Sources */,
+				840E729C2C17F18A00A2B04C /* ImageGalleryView.swift in Sources */,
+				840E72982C17E08B00A2B04C /* TagEditor.swift in Sources */,
+				840E728B2C155DB700A2B04C /* CameraView.swift in Sources */,
+				840E72932C16BDAF00A2B04C /* CameraViewController.swift in Sources */,
+				840E72A02C1800D900A2B04C /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840E72722C155D1700A2B04C /* Dunbar_s_CameraTests.swift in Sources */,
+				840E72A32C180D8B00A2B04C /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840E72A42C180D8B00A2B04C /* ColorExtension.swift in Sources */,
 				840E727C2C155D1700A2B04C /* Dunbar_s_CameraUITests.swift in Sources */,
 				840E727E2C155D1700A2B04C /* Dunbar_s_CameraUITestsLaunchTests.swift in Sources */,
 			);
@@ -288,12 +320,12 @@
 /* Begin PBXTargetDependency section */
 		840E726F2C155D1700A2B04C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 840E725A2C155D1600A2B04C /* Dunbar's Camera */;
+			target = 840E725A2C155D1600A2B04C /* Camera Tags */;
 			targetProxy = 840E726E2C155D1700A2B04C /* PBXContainerItemProxy */;
 		};
 		840E72792C155D1700A2B04C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 840E725A2C155D1600A2B04C /* Dunbar's Camera */;
+			target = 840E725A2C155D1600A2B04C /* Camera Tags */;
 			targetProxy = 840E72782C155D1700A2B04C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -351,11 +383,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Photo Tags";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Photo Tags";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -408,10 +442,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Photo Tags";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "Photo Tags";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -429,6 +465,11 @@
 				DEVELOPMENT_TEAM = 85M6YP3UWX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Camera Tags";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -458,6 +499,11 @@
 				DEVELOPMENT_TEAM = 85M6YP3UWX;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "Camera Tags";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "We need access to your photo library to select photos";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -564,7 +610,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840E72812C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Dunbar's Camera" */ = {
+		840E72812C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Camera Tags" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840E72822C155D1700A2B04C /* Debug */,
@@ -573,7 +619,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840E72842C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Dunbar's CameraTests" */ = {
+		840E72842C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Photo Tags Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840E72852C155D1700A2B04C /* Debug */,
@@ -582,7 +628,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		840E72872C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Dunbar's CameraUITests" */ = {
+		840E72872C155D1700A2B04C /* Build configuration list for PBXNativeTarget "Photo Tags UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				840E72882C155D1700A2B04C /* Debug */,

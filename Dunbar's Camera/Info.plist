@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   Info.plist
-   Dunbar's Camera
-
-   Created by Matthew Stovall on 6/8/24.
-   Copyright (c) 2024 ___ORGANIZATIONNAME___. All rights reserved.
--->
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>NSCameraUsageDescription</key>
+	<string>We need access to your camera.</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>We need access to your photo library.</string>
+</dict>
 </plist>
